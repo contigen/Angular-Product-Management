@@ -1,0 +1,17 @@
+<h2>{{ pageTitle }}</h2>
+<input type="text" name="" id="" [(ngModel)]="listFilter" /><br />
+<p>Filtered: {{ listFilter }}</p>
+<button (click)="toggleImage()">
+  {{ !showImage ? "Show" : "Hide" }} image
+</button>
+<h3 *ngIf="products.length">Hello, the Products</h3>
+<div class="products" *ngFor="let product of filteredProducts">
+  <img [src]="product.imageUrl" alt="" *ngIf="showImage" />
+  <h3>
+    <a href="">{{ product.productName }}</a>
+  </h3>
+  <h3>{{ product.productCode }}</h3>
+  <h3>{{ product.releaseDate }}</h3>
+  <h3>{{ product.price }}</h3>
+  <!-- <pm-star></pm-star> -->
+</div>
