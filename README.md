@@ -1,5 +1,7 @@
 # Apm
 
+This is a product management App built using Angular, during the Google Africa Developer Scholarship 2021 program .
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
 ## Development server
